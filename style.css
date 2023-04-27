@@ -234,7 +234,7 @@ input {
   }
   .pantalla {
     grid-column: 1/4;
-    max-width: 10rem;
+    max-width: 11rem;
     align-items: center;
     justify-content: center;
     margin: 0 0;
@@ -246,7 +246,7 @@ input {
     padding-right: 2rem;
     box-sizing: border-box;
     text-transform: uppercase;
-    width: 17rem;
+    max-width: 18rem;
     height: 10rem;
     border-radius: 20px;
     background: linear-gradient(
