@@ -39,15 +39,15 @@ img {
 img:hover {
   content: url(images/GitHub-Logo-Orange.png);
 }
-
-main {
-  margin: 0;
-}
 .calculator {
-  margin-top: 0;
-  display: grid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .bodyCalculator {
+  align-items: center;
+  justify-content: center;
+  margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: repeat(6, 1fr);
@@ -208,11 +208,15 @@ input {
     rgb(255, 165, 56) 100%
   );
 }
+
+/*responsive design exceptions */
+
 @media only screen and (max-width: 500px) {
+  header {
+    display: none;
+  }
   .calculator {
-    margin-top: 0;
-    display: grid;
-    place-items: center;
+    height: 100vh;
   }
   .bodyCalculator {
     width: 40vh;
@@ -285,5 +289,13 @@ input {
     vertical-align: middle;
     text-transform: uppercase;
     font-size: 1.5rem;
+  }
+  .btn {
+    border: 2px rgb(48, 59, 73) solid;
+    padding: 0 auto;
+  }
+  .textBtns {
+    font-size: 1.7em;
+    padding-bottom: 1.1em;
   }
 }
